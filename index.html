@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="PT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/logoFaviIcon.png" type="image.png">
+    <title>Portfólio KLP</title>
+
+    <!-- LINKS CSS -->
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- STYLE OF SCROOL BAR -->
+
+    <style>
+        ::-webkit-scrollbar {
+            width: 7px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            background: rgb(114, 3, 3);
+            -webkit-box-shadow: inset 0 0 6px rgb(168, 7, 7);
+        }
+    </style>
+</head>
+
+<body id="hiddenDiv">
+
+    <!-- NAVBAR -->
+
+    <nav class="menu">
+        <a href="#"><img src="./images/logo.PNG" id="logo" alt="" srcset=""></a>
+
+        <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+
+        <ul class="nav-list">
+            <li><a class="menu-buttons" href="#container1">Início</a></li>
+            <li><a class="menu-buttons" href="#container2">Sobre</a></li>
+            <li><a class="menu-buttons" href="#container3">Projetos</a></li>
+            <li><a class="menu-buttons" href="#contact-container">Contato</a></li>
+            <li>
+                <label for="checkbox" class="toogler" id="theme-alternate">
+                    <input type="checkbox" id="checkbox">
+                    <span class="ball"></span>
+                    <i class="fa fa-sun-o sun" aria-hidden="true"></i>
+                    <i class="fa fa-moon-o moon" aria-hidden="true"></i>
+                </label>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- CONTAINER OF PRESENTATION -->
+
+    <div id="container1">
+
+        <div id="container-of-tittle">
+            <h6 id="first-title-of-the-presentation-text">Olá! Eu sou </h6>
+            <h1 id="second-title-of-the-presentation-text">Kennedy Luiz</h1>
+            <h2 id="third-title-of-the-presentation-text"> Desenvolvedor</h2>
+            <h4 id="fourth-title-of-the-presentation-text">Programador front-end com foco em desenvolvimento web full stack</h4>
+            <a href="https://wa.me/5511951617431"> <button id="talk-to-me-button" class="buttons-of-tittle"> Fale Comigo !</button> 
+            </a>
+        </div>
+
+        <div id="container-picture">
+            <img id="my-avatar" src="./images/PicsArt_02-19-02.27.07.png" alt="" data-anime="right">
+        </div>
+
+    </div>
+
+    <!-- CONTAINER OF DESCRIPTION -->
+
+    <div id="container2" data-anime="left">
+        <div id="container-about-me">
+            <img id="my-picture" src="./images/minhaFoto.png" alt="" srcset="" data-anime="top">
+        </div>
+
+
+        <div id="container-of-my-description">
+
+            <h1 id="text-about-me"> Sobre mim </h1>
+
+            <p id="paragraph-1-of-my-description" class="paragraphs-of-my-description" data-anime="left">
+                Antes de qualquer coisa, eu quero dizer para você que eu estou amando aprender a programar.
+
+                Eu tive meu primeiro contato com linhas de código aos 17 anos de idade, quando estava acabando a escola
+                e não sabia com o que queria trabalhar, até que assisti uma aula de HTML no YouTube e achei
+                interessante. Depois de muita pesquisa eu entendi os conceitos básicos de programação e quis aprender
+                mais, e neste momento eu tive uma sensação ótima que me lembro até hoje. Eu percebi que finalmente
+                encontrei algo que eu realmente gostava – e isso me fascinou.
+                Desde então, eu decidi que eu queria fazer isso na minha vida — eu queria ser um programador.</p>
+
+            <p id="paragraph-2-of-my-description" class="paragraphs-of-my-description" data-anime="right">
+                Eu escolhi o desenvolvimento web como foco atual da minha carreira pois ele me da liberdade para fazer o
+                que mais me fascina na programação — que é criar páginas e aplicações incríveis, que podem ajudar e
+                simplificar a vida das pessoas — e venho me aprimorando diariamente nessa área.
+                Minhas especialidades: HTML, CSS, JavaScript, Bootstrap, Jquery, NodeJS e Angular.
+                Se você se interessou pelo que leu e quer me conhecer melhor, mande uma mensagem! Vamos conversar. Será
+                um grande prazer falar com você.
+            </p>
+            <a href="20220330_173903_0000.pdf" download="20220330_173903_0000.pdf" data-anime="top"><button id="download-resume-button">
+                    Baixar CV</button> </a>
+
+            <button id="button-open-presentation-video" onclick="openVideo()" data-anime="bottom">Vídeo de apresentação</button>
+            <button id="button-close-presentation-video" onclick="closeVideo()">Fechar Vídeo de apresentação</button>
+        </div>
+    </div>
+
+    <div id="presentation-video">
+        <img id="gif-video" src="./images/b6e0b072897469.5bf6e79950d23.gif" alt="" srcset="">
+        <h1 id="project-in-progress-text"> Projeto em andamento</h1>
+    </div>
+
+    <!-- CONTAINER OF MY SKILLS -->
+
+    <div id="container-skills">
+        <h2 id="skills-text">Habilidades</h2>
+        <div id="container-stacks" data-anime="right">
+            <img class="img-stacks" src="./images/html.png" alt="">
+            <img class="img-stacks" src="./images/css.png">
+            <img class="img-stacks" src="./images/javascript.png" alt="">
+            <img class="img-stacks" src="./images/firebase.png" alt="">
+            <img class="img-stacks" src="./images/bootstrap.png" alt="">
+            <img class="img-stacks" src="./images/jquery.png" alt="" srcset="">
+            <img class="img-stacks" src="./images/git.png" alt="" srcset="">
+            <img class="img-stacks" src="./images/github.png" alt="" srcset="">
+            <img class="img-stacks" src="./images/Angular_full_color_logo.svg.png" alt="" srcset="">
+            <img class="img-stacks" src="./images/node.png" alt="" srcset="">
+            <img class="img-stacks" src="./images/typescript.png" alt="" srcset="">
+        </div>
+    </div>
+
+    <!-- CONTAINER OF PROJECTS -->
+
+    <div id="container3">
+
+        <h2 id="projects-text">Projetos</h2>
+
+
+        <div class="container-projects">
+            <div class="card" data-anime="left">
+                <div class="images-projects">
+                    <a href="https://calculadorakennedyluizlp.netlify.app/">
+                        <img class="projects-images"
+                            src="./images/screencapture-calculadorakennedyluizlp-netlify-app-2022-02-19-12_40_19.png" alt="">
+                    </a>
+                </div>
+                <div class="content">
+                    <div class="tittle">Calculadora</div>
+                </div>
+            </div>
+
+            <div class="card" data-anime="top">
+                <div class="images-projects"><a href="https://timerlp.netlify.app/">
+                        <img class="projects-images"
+                            src="./images/screencapture-timerlp-netlify-app-2022-02-19-12_41_56.png" alt="">
+                    </a>
+                </div>
+                <div class="content">
+                    <div class="tittle">Cronômetro</div>
+                </div>
+            </div>
+
+            <div class="card" data-anime="right">
+                <div class="images-projects"><a href="https://conversor-klp.netlify.app/">
+                        <img class="projects-images"
+                            src="./images/screencapture-conversor-klp-netlify-app-2022-02-19-13_13_06.png" alt="">
+                    </a>
+                </div>
+                <div class="content">
+                    <div class="tittle">Conversor de moedas</div>
+                </div>
+            </div>
+
+            <div class="card" data-anime="left">
+                <div class="images-projects"><a href="https://pagina-de-captura-lp.netlify.app/">
+                        <img class="projects-images"
+                            src="./images/screencapture-pagina-de-captura-lp-netlify-app-2022-02-19-13_17_00.png" alt="">
+                    </a>
+                </div>
+                <div class="content">
+                    <div class="tittle">Pagina de captura</div>
+                </div>
+            </div>
+
+            <div class="card" data-anime="top">
+                <div class="images-projects"><a href="https://neonshoes.netlify.app/"><img class="projects-images"
+                            src="./images/screencapture-neonshoes-netlify-app-index-html-2022-02-19-12_33_49.png" alt="">
+                    </a>
+                </div>
+                <div class="content">
+                    <div class="tittle">Neon shoes</div>
+                </div>
+            </div>
+
+            <div class="card" data-anime="right">
+                <div class="images-projects"><a href="https://music-klp.netlify.app/">
+                        <img class="projects-images"
+                            src="./images/screencapture-music-klp-netlify-app-2022-02-19-13_15_20.png" alt="">
+                    </a>
+                </div>
+                <div class="content">
+                    <div class="tittle">Player de Música</div>
+                </div>
+            </div>
+
+            <div class="card" data-anime="left">
+                <div class="images-projects"><a href="https://churrascometroklp.netlify.app/">
+                        <img class="projects-images"
+                            src="./images/screencapture-churrascometroklp-netlify-app-2022-02-19-13_16_19.png" alt="">
+                    </a>
+                </div>
+                <div class="content">
+                    <div class="tittle">Churrascômetro</div>
+                </div>
+            </div>
+
+            <div class="card" data-anime="bottom">
+                <div class="images-projects"><a href="https://memoryklp.netlify.app/">
+                        <img class="projects-images"
+                            src="./images/screencapture-memoryklp-netlify-app-2022-02-19-13_14_40.png" alt="">
+                    </a>
+                </div>
+                <div class="content">
+                    <div class="tittle">Jogo da memória</div>
+                </div>
+            </div>
+
+            <div class="card" data-anime="right">
+                <div class="images-projects"><a href="https://atendimento01.netlify.app/">
+                        <img class="projects-images"
+                            src="./images/screencapture-atendimento01-netlify-app-2022-02-19-12_44_42.png" alt="">
+                    </a>
+                </div>
+                <div class="content">
+                    <div class="tittle">Página De Atendimento</div>
+                </div>
+            </div>
+
+            <div class="card" data-anime="left">
+                <div class="images-projects"><a href="https://jogo-da-velha-klp.netlify.app/"><img
+                        class="projects-images"
+                        src="./images/screencapture-jogo-da-velha-klp-netlify-app-2022-02-19-12_45_39.png" alt="">
+                    </a>
+                </div>
+                <div class="content">
+                    <div class="tittle">Jogo Da Velha</div>
+                </div>
+            </div>
+
+            <div class="card" data-anime="bottom">
+                <div class="images-projects"><a href="https://login-page-klp.netlify.app/"><img
+                        class="projects-images" src="./images/Captura de Tela (3).png" alt="">
+                    </a>
+                </div>
+                <div class="content">
+                    <div class="tittle">Formulário de Cadastro</div>
+                </div>
+            </div>
+
+            <div class="card" data-anime="right">
+                <div class="images-projects"><a href="https://expansive-menu.netlify.app/"><img
+                        class="projects-images" src="./images/Captura de Tela (5).png" alt="">
+                    </a>
+                </div>
+                <div class="content">
+                    <div class="tittle">Formulário de Cadastro</div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- CONTAINER OF CONTACT -->
+
+    <div id="contact-container">
+        <h1 id="contact-text">Contato</h1>
+        <div id="container-images-contact">
+            <a href="https://www.linkedin.com/in/kennedy-luiz-286875199/" data-anime="left"><img
+                    class="img-social-media" src="./images/linkedin.png" alt=""></a>
+
+            <a href="https://www.instagram.com/l.kennedy._/" data-anime="left"><img class="img-social-media"
+                    src="./images/logotipo-do-instagram.png"></a>
+
+            <a href="https://wa.me/5511951617431"><img class="img-social-media" src="./images/whatsapp.png" alt=""
+                    data-anime="top"></a>
+
+            <a href="https://github.com/kennedyLP"><img class="img-social-media" src="./images/github.png" alt=""
+                    data-anime="right"></a>
+
+            <a href="https://discord.com/channels/@me"><img class="img-social-media" src="./images/discordia.png" alt=""
+                    data-anime="right"></a>
+        </div>
+    </div>
+
+    <!-- COPYRIGHT -->
+    <p id="copyright">&copy; 2022 Kennedy Luiz</p>
+
+    <!-- LINK JAVASCRIPT -->
+    <script src="portfolio.js"></script>
+
+</body>
+
+</html>
